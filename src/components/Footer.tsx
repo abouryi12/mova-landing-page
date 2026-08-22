@@ -1,5 +1,4 @@
 import Link from "next/link";
-import DownloadAppButton from "./DownloadAppButton";
 import Image from "next/image";
 
 const footerLinks = {
@@ -101,9 +100,6 @@ export default function Footer() {
  </li>
  ))}
  </ul>
-
-            {/* Download App Button */}
-            <DownloadAppButton variant="footer" />
  </div>
  </div>
  </div>
