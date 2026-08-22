@@ -48,7 +48,7 @@ export default function DownloadAppButton({ className = '', variant = 'solid', t
 
       {isOpen && mounted && createPortal(
         <div 
-          className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-[#0c2424]/90 backdrop-blur-sm"
+          className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-[#0c2424]/90"
           onClick={() => setIsOpen(false)}
         >
           <div 
