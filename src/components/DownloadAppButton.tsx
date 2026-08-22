@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import Image from 'next/image';
 
 interface Props {
@@ -11,6 +12,11 @@ interface Props {
 
 export default function DownloadAppButton({ className = '', variant = 'solid', text = 'حمّل التطبيق الآن' }: Props) {
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const baseClasses = "font-cairo font-bold transition-all duration-200 inline-flex items-center justify-center gap-2";
   
@@ -40,9 +46,9 @@ export default function DownloadAppButton({ className = '', variant = 'solid', t
         {text}
       </button>
 
-      {isOpen && (
+      {isOpen && mounted && createPortal(
         <div 
-          className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-[#0c2424]/90 backdrop-blur-sm"
+          className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-[#0c2424]/90 backdrop-blur-sm"
           onClick={() => setIsOpen(false)}
         >
           <div 
@@ -108,7 +114,8 @@ export default function DownloadAppButton({ className = '', variant = 'solid', t
               </p>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );
