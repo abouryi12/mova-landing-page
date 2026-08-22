@@ -71,7 +71,7 @@ export default function Navbar() {
  </nav>
 
  {/* Desktop CTA */}
- <div className="hidden lg:flex items-center gap-3">
+ <div className="hidden lg:flex items-center gap-6 xl:gap-8">
  <Link
  href="/contact"
  className="text-base md:text-lg font-bold text-ink-700 hover:text-teal-700 transition-colors"

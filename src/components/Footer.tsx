@@ -34,7 +34,7 @@ export default function Footer() {
  alt="MOVA"
  width={120}
  height={40}
- className="h-9 w-auto brightness-0 invert"
+ className="h-9 w-auto"
  />
  </Link>
  <p className="text-teal-100/80 text-sm leading-relaxed font-cairo max-w-xs">
