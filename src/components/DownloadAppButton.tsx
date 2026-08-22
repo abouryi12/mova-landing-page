@@ -16,15 +16,15 @@ export default function DownloadAppButton({ className = '', variant = 'solid', t
   
   let variantClasses = "";
   if (variant === 'solid') {
-    variantClasses = "bg-amber-500 hover:bg-amber-400 text-white px-6 py-3 rounded-xl shadow-amber-glow";
+    variantClasses = "bg-amber-500 hover:bg-amber-400 text-white px-5 py-2.5 text-sm md:text-base rounded-xl shadow-amber-glow";
   } else if (variant === 'outline') {
-    variantClasses = "border-2 border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-white px-6 py-3 rounded-xl";
+    variantClasses = "border-2 border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-white px-5 py-2.5 text-sm md:text-base rounded-xl";
   } else if (variant === 'text') {
-    variantClasses = "text-amber-400 hover:text-amber-300 underline underline-offset-4 px-0 py-0";
+    variantClasses = "text-amber-400 hover:text-amber-300 underline underline-offset-4 px-0 py-0 text-sm md:text-base";
   } else if (variant === 'footer') {
-    variantClasses = "w-full bg-teal-800 hover:bg-teal-700 text-teal-100 px-4 py-3 rounded-xl border border-teal-700 hover:border-teal-600 shadow-sm";
+    variantClasses = "w-full bg-teal-800 hover:bg-teal-700 text-teal-100 px-4 py-3 text-sm rounded-xl border border-teal-700 hover:border-teal-600 shadow-sm";
   } else if (variant === 'white') {
-    variantClasses = "bg-white text-amber-500 hover:bg-gray-50 px-8 py-4 rounded-xl shadow-md";
+    variantClasses = "bg-white text-amber-500 hover:bg-gray-50 px-6 py-3 text-sm md:text-base rounded-xl shadow-md";
   }
 
   const buttonClasses = `${baseClasses} ${variantClasses} ${className}`;
