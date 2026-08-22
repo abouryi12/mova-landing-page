@@ -282,7 +282,6 @@ export default function HomePage() {
  </div>
  </div>
  ))}
- <DownloadAppButton variant="solid" />
  </div>
  </div>
  </div>
