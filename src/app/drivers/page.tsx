@@ -42,16 +42,7 @@ export default function DriversPage() {
  <p className="text-white/70 text-xl font-cairo leading-relaxed mb-8 animate-on-scroll">
  حوّل وقتك على الطريق إلى فرص جديدة مع MOVA، تستقبل الرحلات، وتدير وقتك، وتتابع نشاطك — كلها في تطبيق واحد
  </p>
- <Link
- href="/contact"
- id="driver-hero-cta"
- className="inline-flex items-center gap-2 px-8 py-4 bg-amber-500 hover:bg-amber-400 text-white font-bold text-xl rounded-2xl transition-all duration-200 hover:shadow-amber-glow font-cairo"
- >
- ابدأ التسجيل كسائق
- <svg className="w-5 h-5 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
- <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
- </svg>
- </Link>
+ <DownloadAppButton variant="solid" />
  </div>
  <div className="flex justify-center items-end">
  <div className="relative w-full max-w-md lg:max-w-lg">

@@ -282,18 +282,8 @@ export default function HomePage() {
  </div>
  </div>
  ))}
+ <DownloadAppButton variant="solid" />
  </div>
-
- <Link
- href="/drivers"
- id="home-driver-cta"
- className="inline-flex items-center gap-2 px-7 py-4 bg-amber-500 hover:bg-amber-400 text-white font-bold text-lg rounded-2xl transition-all duration-200 hover:shadow-amber-glow font-cairo"
- >
- انضم كسائق
- <svg className="w-5 h-5 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
- <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
- </svg>
- </Link>
  </div>
  </div>
  </div>

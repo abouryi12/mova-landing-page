@@ -46,7 +46,7 @@ export default function DownloadAppButton({ className = '', variant = 'solid', t
           onClick={() => setIsOpen(false)}
         >
           <div 
-            className="bg-surface rounded-3xl p-8 md:p-10 max-w-[420px] w-full shadow-2xl relative border border-surface-dark transition-all"
+            className="bg-surface rounded-3xl p-6 md:p-8 max-w-[340px] w-full shadow-2xl relative border border-surface-dark transition-all"
             onClick={e => e.stopPropagation()}
             dir="rtl"
           >
@@ -80,30 +80,30 @@ export default function DownloadAppButton({ className = '', variant = 'solid', t
               </div>
 
               {/* Main Heading */}
-              <h3 className="text-2xl font-almarai font-extrabold text-teal-900 mb-8 leading-tight">
+              <h3 className="text-xl font-almarai font-extrabold text-teal-900 mb-6 leading-tight">
                 وجّه كاميرا هاتفك الذكي لرمز الـ QR لتحميل التطبيق
               </h3>
 
               {/* QR Code */}
-              <div className="flex justify-center mb-8">
-                <div className="relative p-4 bg-white rounded-2xl shadow-sm border-2 border-surface-dark">
+              <div className="flex justify-center mb-6">
+                <div className="relative p-3 bg-white rounded-xl shadow-sm border-2 border-surface-dark">
                   {/* Decorative Corners */}
-                  <div className="absolute top-0 right-0 w-6 h-6 border-t-4 border-r-4 border-amber-500 rounded-tr-xl -mt-1 -mr-1"></div>
-                  <div className="absolute top-0 left-0 w-6 h-6 border-t-4 border-l-4 border-amber-500 rounded-tl-xl -mt-1 -ml-1"></div>
-                  <div className="absolute bottom-0 right-0 w-6 h-6 border-b-4 border-r-4 border-amber-500 rounded-br-xl -mb-1 -mr-1"></div>
-                  <div className="absolute bottom-0 left-0 w-6 h-6 border-b-4 border-l-4 border-amber-500 rounded-bl-xl -mb-1 -ml-1"></div>
+                  <div className="absolute top-0 right-0 w-4 h-4 border-t-4 border-r-4 border-amber-500 rounded-tr-xl -mt-1 -mr-1"></div>
+                  <div className="absolute top-0 left-0 w-4 h-4 border-t-4 border-l-4 border-amber-500 rounded-tl-xl -mt-1 -ml-1"></div>
+                  <div className="absolute bottom-0 right-0 w-4 h-4 border-b-4 border-r-4 border-amber-500 rounded-br-xl -mb-1 -mr-1"></div>
+                  <div className="absolute bottom-0 left-0 w-4 h-4 border-b-4 border-l-4 border-amber-500 rounded-bl-xl -mb-1 -ml-1"></div>
                   
                   <Image 
                     src="/qr-code.png" 
                     alt="QR Code" 
-                    width={200} 
-                    height={200} 
+                    width={150} 
+                    height={150} 
                     className="rounded-lg opacity-95" 
                   />
                 </div>
               </div>
 
-              <p className="text-sm font-cairo text-ink-500 max-w-[280px] mx-auto">
+              <p className="text-xs font-cairo text-ink-500 max-w-[240px] mx-auto">
                 امسح رمز الاستجابة السريعة بكاميرا هاتفك لتنزيل تطبيق MOVA
               </p>
             </div>

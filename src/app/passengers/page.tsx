@@ -33,13 +33,7 @@ export default function PassengersPage() {
  مع MOVA، تطلب رحلتك، تتابع تفاصيلها، وتتواصل مع سائقك — كلها من مكان واحد وبخطوات بسيطة
  </p>
  <div className="flex gap-4 flex-wrap animate-on-scroll">
- <Link
- href="/contact"
- id="passenger-hero-cta"
- className="px-7 py-4 bg-amber-500 hover:bg-amber-400 text-white font-bold text-lg rounded-2xl transition-all duration-200 hover:shadow-amber-glow font-cairo"
- >
- ابدأ الآن
- </Link>
+ <DownloadAppButton variant="solid" />
  <Link
  href="/#how-it-works"
  className="px-7 py-4 border-2 border-teal-700 text-teal-700 font-bold text-lg rounded-2xl hover:bg-teal-50 transition-all duration-200 font-cairo"
